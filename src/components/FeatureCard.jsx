@@ -1,4 +1,6 @@
 import React from 'react'
+import RenderStars from './RenderStars'
+
 
 function FeatureCard({ image, name, rating }) {
     return (
@@ -10,7 +12,7 @@ function FeatureCard({ image, name, rating }) {
                     <img class="h-48 rounded w-full object-cover md:h-full md:w-48" src={image} alt="" />
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
-                        <p class="mb-3 font-semibold text-gray-700 dark:text-gray-400">Rating : {rating}</p>
+                        <p class="mb-3 font-semibold text-gray-700 dark:text-gray-400">Rating : {RenderStars(rating)}</p>
                     </div>
                 </a>
             </div>
