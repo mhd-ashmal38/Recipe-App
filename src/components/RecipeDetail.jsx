@@ -32,7 +32,7 @@ function RecipeDetail() {
 
             <div className="flex flex-col md:flex-row items-center md:items-start">
                 
-                <div><img src={recipe.image} alt="" width={600} className="mb-2" /></div>
+                <div><img src={recipe.image} alt="" width={600} className="mb-2 rounded-lg" /></div>
                 <div className='px-10'>
                     <h3 className="font-bold mb-2">Ingredients:</h3>
                     <ul className='list-disc pb-3'>

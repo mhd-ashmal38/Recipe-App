@@ -47,7 +47,7 @@ function FullRecipie() {
           placeholder="Search recipe..."
           value={searchQuery}
           onChange={handleSearchInputChange}
-          className="p-2 border mb-5 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400 w-80"
+          className="p-2 border mb-5 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400 w-full md:w-80"
         />
       <div className='md:grid gap-3 grid-cols-4'>
       
@@ -55,7 +55,7 @@ function FullRecipie() {
           filteredRecipes.map((reciReq) => (
 
 
-            <div key={reciReq.id} class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div key={reciReq.id} class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-3">
                 <img class="rounded-t-lg" src={reciReq.image} alt="" />
               <div class="p-5">
                   <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{reciReq.name}</h5>
